@@ -1,0 +1,33 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "pages"
+    label: "Pages du site"
+    files:
+      - file: "index.html"
+        label: "Accueil"
+        name: "index"
+        editor: { preview: false, code: true }
+      - file: "services.html"
+        label: "Services"
+        name: "services"
+        editor: { preview: false, code: true }
+      - file: "deneigement-deglacage.html"
+        label: "Déneigement"
+        name: "deneigement"
+        editor: { preview: false, code: true }
+      - file: "soumission.html"
+        label: "Soumission"
+        name: "soumission"
+        editor: { preview: false, code: true }
+      - file: "contact.html"
+        label: "Contact"
+        name: "contact"
+        editor: { preview: false, code: true }
