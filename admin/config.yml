@@ -45,7 +45,3 @@ collections:
         fields:
           - { label: "Titre", name: "title", widget: "string" }
           - { label: "Contenu", name: "body", widget: "text" }
-
-        label: "Contact"
-        name: "contact"
-        editor: { preview: false, code: true }
