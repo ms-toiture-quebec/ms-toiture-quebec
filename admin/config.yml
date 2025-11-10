@@ -14,20 +14,38 @@ collections:
       - file: "index.html"
         label: "Accueil"
         name: "index"
-        editor: { preview: false, code: true }
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "text" }
+
       - file: "services.html"
         label: "Services"
         name: "services"
-        editor: { preview: false, code: true }
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "text" }
+
       - file: "deneigement-deglacage.html"
         label: "Déneigement"
         name: "deneigement"
-        editor: { preview: false, code: true }
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "text" }
+
       - file: "soumission.html"
         label: "Soumission"
         name: "soumission"
-        editor: { preview: false, code: true }
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "text" }
+
       - file: "contact.html"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { label: "Titre", name: "title", widget: "string" }
+          - { label: "Contenu", name: "body", widget: "text" }
+
         label: "Contact"
         name: "contact"
         editor: { preview: false, code: true }
