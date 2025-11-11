@@ -1,14 +1,85 @@
-<!doctype html><html><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width">
-<title>Admin – MS Toiture Québec</title>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-</head><body>
-<script>
-if (window.netlifyIdentity) {
-  window.netlifyIdentity.on('init', user => {
-    if (!user) { window.netlifyIdentity.on('login', () => { document.location.href = '/admin/'; }); }
-  });
-}
-</script>
-</body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MS Couverture Québec – Toitures bardeaux, toits plats, zinguerie</title>
+  <meta name="description" content="Couvreur résidentiel Rive-Sud de Montréal : bardeaux d’asphalte, toits plats, zinguerie & gouttières, déneigement. Devis gratuit en 24 h.">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+<header class="container header">
+  <div class="brand">
+    <strong>MS Couverture Québec</strong><br>
+    <small>Licence RBQ en cours • Assurance responsabilité</small>
+  </div>
+  <nav class="nav">
+    <a href="/services.html">Services</a>
+    <a href="/deneigement-deglacage.html">Déneigement</a>
+    <a class="btn" href="/soumission.html">Devis gratuit</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1>Toitures résidentielles sur la Rive-Sud</h1>
+      <p class="lead">Bardeaux d’asphalte • Toits plats • Zinguerie & gouttières • Déneigement hivernal.<br> Intervention propre, rapide et garantie.</p>
+      <p><a class="btn primary" href="/soumission.html">Demander un devis en 24 h</a></p>
+      <ul class="badges">
+        <li>≥ 15 ans d’expérience</li>
+        <li>Matériaux certifiés</li>
+        <li>Boucherville • Saint-Lambert • Longueuil • Sainte-Julie • Varennes • Beloeil</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Nos services</h2>
+      <div class="grid">
+        <article class="card"><h3>Bardeaux d’asphalte</h3><p>Remplacement complet, réparations, ventilation de comble, interventions après tempête.</p></article>
+        <article class="card"><h3>Toits plats</h3><p>Membranes élastomères / EPDM, solins, drains, entretien d’étanchéité.</p></article>
+        <article class="card"><h3>Zinguerie & gouttières</h3><p>Alu / acier : descentes, pare-feuilles, solins autour de cheminées et lucarnes.</p></article>
+        <article class="card"><h3>Urgences & fuites</h3><p>Bardeaux arrachés, infiltrations, bâchage, sécurisation rapide.</p></article>
+        <article class="card"><h3>Déneigement de toiture</h3><p>Toits plats et en pente. Prévention des barrages de glace et dégagement des gouttières.</p></article>
+        <article class="card"><h3>Isolation & ventilation</h3><p>Pare-vapeur, soffites, sorties d’air : durée de vie du toit et confort améliorés.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <h2>Pourquoi nous choisir</h2>
+      <div class="grid three">
+        <div class="card"><h4>Qualité pro</h4><p>Pose conforme aux normes québécoises, finitions soignées.</p></div>
+        <div class="card"><h4>Transparence</h4><p>Devis détaillé, photos avant/après, garantie écrite.</p></div>
+        <div class="card"><h4>Propreté</h4><p>Protection du chantier, ramassage des clous, évacuation des déchets.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Zones d’intervention</h2>
+      <p>Boucherville • Saint-Lambert • Longueuil • Sainte-Julie • Varennes • Beloeil • Mont-Saint-Hilaire et alentours.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>© <span id="year"></span> MS Couverture Québec</div>
+    <div class="foot-links">
+      <a href="/services.html">Services</a>
+      <a href="/deneigement-deglacage.html">Déneigement</a>
+      <a href="/soumission.html">Devis</a>
+      <a href="/contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
